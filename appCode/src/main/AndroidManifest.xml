@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+<!--        <activity-->
+<!--            android:name="com.kodlib.megacalculator.activities.SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            android:screenOrientation="portrait">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="@string/app_id_admob" />-->
+
+        <activity
+            android:name="com.kodlib.megacalculator.activities.EMIActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.BMICalculator"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.AgeCalculator"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.UnitTemperature"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.UnitWeight"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.UnitLength"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.UnitArea"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.UnitConverter"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.ScientificCal"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.History"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.StandardCal"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kodlib.megacalculator.activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
