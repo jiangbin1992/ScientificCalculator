@@ -54,37 +54,38 @@ public class AdsUtility {
     }
 
     public static void showInterAds(final Activity activity, AdFinished adFinished) {
-        if (interstitialAd != null) {
-            interstitialAd.show(activity);
-            interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
-                @Override
-                public void onAdDismissedFullScreenContent() {
-                    super.onAdDismissedFullScreenContent();
-                    adFinished.onAdFinished();
-                    loadInterstitialAd(activity);
-                }
-            });
-        } else {
-            adFinished.onAdFinished();
-            loadInterstitialAd(activity);
-        }
+        adFinished.onAdFinished();
+//        if (interstitialAd != null) {
+//            interstitialAd.show(activity);
+//            interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+//                @Override
+//                public void onAdDismissedFullScreenContent() {
+//                    super.onAdDismissedFullScreenContent();
+//                    adFinished.onAdFinished();
+//                    loadInterstitialAd(activity);
+//                }
+//            });
+//        } else {
+//            adFinished.onAdFinished();
+//            loadInterstitialAd(activity);
+//        }
     }
 
     public static void loadInterstitialAd(final Context context) {
-        AdRequest adRequestNormal = new AdRequest.Builder().build();
-        InterstitialAd.load(context, AD_INTERSTITIAL_ID, adRequestNormal, new InterstitialAdLoadCallback() {
-            @Override
-            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                // The mInterstitialAd reference will be null until
-                AdsUtility.interstitialAd = interstitialAd;
-            }
-
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                // Handle the error
-                interstitialAd = null;
-            }
-        });
+//        AdRequest adRequestNormal = new AdRequest.Builder().build();
+//        InterstitialAd.load(context, AD_INTERSTITIAL_ID, adRequestNormal, new InterstitialAdLoadCallback() {
+//            @Override
+//            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+//                // The mInterstitialAd reference will be null until
+//                AdsUtility.interstitialAd = interstitialAd;
+//            }
+//
+//            @Override
+//            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+//                // Handle the error
+//                interstitialAd = null;
+//            }
+//        });
 
     }
 
